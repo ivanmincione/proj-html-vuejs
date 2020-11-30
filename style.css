@@ -14,26 +14,38 @@ ul{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
-.btn{
+/* .btn{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-}
+} */
+
+
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: #0f1164;
+    background-image: url("img/header-bg.svg");
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.header-left {
+/* #img-bg-header{
+    position: absolute;
+    top: -40px;
+    z-index: 10;
+} */
+
+.header-left, .header-right {
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .logo-header{
@@ -59,10 +71,108 @@ header{
     letter-spacing: 1px;
     font-weight: bold;
     color: white;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .list-menu li:hover a{
     cursor: pointer;
     border-bottom: 2px solid white;
+}
+
+.info-number{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.info-number i {
+    margin-right: 10px;
+}
+
+.btn-white {
+    width: 300px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-white a {
+    color: #0b0e10;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* prima sezione */
+.container{
+    max-width: 1500px;
+    /* height: 800px; */
+    display: flex;
+    margin:0 auto;
+    border: 1px solid;
+    position: relative;
+}
+
+section{
+    position: relative;
+}
+
+main .top-page{
+    background-color: #0f1164;
+    background-image: url("img/home-bg-3.svg");
+    background-size: cover;
+}
+
+.title{
+    margin-right: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 100px;
+}
+
+.title p{
+    font-size: 25px;
+    color: white;
+    padding: 50px 50px;
+}
+
+.img-top-page{
+
+}
+.img-top-page img{
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    object-fit: cover;
+
+}
+
+.widget{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.widget-top, .widget-bottom{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
