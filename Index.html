@@ -4,296 +4,266 @@
         <meta charset="utf-8">
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <!-- FONTAWESOME -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <!-- VUE.JS -->
 	    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <!-- STYLE -->
         <link rel="stylesheet" href="style.css">
+        <!-- logo on bar title -->
+        <link rel="icon" href="img/logo.png" type="image/icon type">
         <title>Virtual Assistent</title>
     </head>
     <body>
+        <div id="root">
+            <header class="header-bg">
+                <!-- header di sinistra -->
+                <div class="header-left">
+                    <div class="logo-header">
+                        <img src="img/logo.png" alt="logoVA">
+                    </div>
+                    <div class="menu-header">
+                        <ul class="list-menu">
+                            <li v-for="item in items">
+                                <a href="#">{{ item }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <header class="header-bg">
-            <!-- header di sinistra -->
-            <div class="header-left">
-                <div class="logo-header">
-                    <img src="img/logo.png" alt="logoVA">
+                <!-- header di destra -->
+                <div class="header-right">
+                    <div class="info-number">
+                        <i class="fas fa-headphones-alt"></i>
+                        <span>1.800.123.4567</span>
+                    </div>
+                    <!-- bottone bianco da riutilizzare ove occorre -->
+                    <div class="btn-white ">
+                        <a href="#"> Get a free consultation </a>
+                    </div>
                 </div>
-                <div class="menu-header">
-                    <ul class="list-menu">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                            <span><i class="fas fa-angle-down"></i></span>
-                        </li>
-                        <li>
-                            <a href="#">Journal</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </header>
 
-            <!-- header di destra -->
-            <div class="header-right">
-                <div class="info-number">
-                    <i class="fas fa-headphones-alt"></i>
-                    <span>1.800.123.4567</span>
-                </div>
-                <!-- bottone bianco da riutilizzare ove occorre -->
-                <div class="btn-white ">
-                    <a href="#"> Get a free consultation </a>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- first section TOP PAGE -->
-            <section class="top-page">
-                <div class="container">
-                    <div class="row">
-                        <div class="title">
-                            <h1> Independent professional who works remotely to help whit your business.</h1>
-                            <p> Mauris aliquam libero, fermentum quis eros, massa sagittis. Lectus mattis elit purus venenatis.</p>
-                            <div class="btn-white">
-                                <a href="#">What is a VA exactly?</a>
+            <main>
+                <!-- first section TOP PAGE -->
+                <section class="top-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="title">
+                                <h1> Independent professional who works remotely to help whit your business.</h1>
+                                <p> Mauris aliquam libero, fermentum quis eros, massa sagittis. Lectus mattis elit purus venenatis.</p>
+                                <div class="btn-white">
+                                    <a href="#">What is a VA exactly?</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="img-top-page">
-                            <img src="img/info-5-600x666.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="widget">
-                    <div class="widget-top">
-                        <i class="fas fa-folder-minus"></i>
-                        <p>Demos</p>
-                    </div>
-                    <div class="widget-bottom">
-                        <p id="widget-price"><span>$</span>39</p>
-                        <p>On Sale</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- second section AVAILABLE SERVICES -->
-            <section class="available-services">
-                <div class="container">
-                    <h3>Available services</h3>
-                    <div class="row">
-                        <div class="box-services">
-                            <h2>Answering phone calls</h2>
-                            <p>Elementum posuere mauris, ac ultricies eu orci massa at id tincidunt.</p>
-                        </div>
-                        <div class="box-services">
-                            <h2>Basic data entry</h2>
-                            <p>Accumsan odio id nec mauris, eu, tortor at. Vitae tincidunt enim quis.</p>
-                        </div>
-                        <div class="box-services">
-                            <h2>Organizing calendar</h2>
-                            <p>Elementum blandit erat odio quam pellentesque aliquam faucibus.</p>
-                        </div>
-                        <div class="box-services">
-                            <h2>Booking <br>travels</h2>
-                            <p>Est dignissim ipsum tellus, hendrerit ac aliquam eu vel blandit ac amet ut ut.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- sezione tre FIND ultimate VA  -->
-            <section class="find-va">
-                <!-- <div id="orange-ball">
-
-                </div> -->
-                <div class="container">
-                    <div class="row">
-                        <div class="img-find-va">
-                            <img src="img/info-5-2x-600x648.png" alt="">
-                        </div>
-
-                        <div class="title-dark">
-                            <img src="img/icon-1-2x-200x155.png" alt="icon">
-                            <h1> Find the ultimate virtual assistant for your business.</h1>
-                            <p> Donnec est tristique eu massa pellentesque non sit sit donec. Proin auctor est vehicula.</p>
-                            <div class="btn-orange">
-                                <a href="#">What is a VA exactly?</a>
+                            <div class="img-top-page">
+                                <img src="img/info-5-600x666.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+
+                    <div class="widget">
+                        <div class="widget-top">
+                            <i class="fas fa-folder-minus"></i>
+                            <p>Demos</p>
+                        </div>
+                        <div class="widget-bottom">
+                            <p id="widget-price"><span>$</span>39</p>
+                            <p>On Sale</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- second section AVAILABLE SERVICES -->
+                <section class="available-services">
+                    <div class="container">
+                        <h3>Available services</h3>
+                        <div class="row">
+                            <div class="box-services">
+                                <h2>Answering phone calls</h2>
+                                <p>Elementum posuere mauris, ac ultricies eu orci massa at id tincidunt.</p>
+                            </div>
+                            <div class="box-services">
+                                <h2>Basic data entry</h2>
+                                <p>Accumsan odio id nec mauris, eu, tortor at. Vitae tincidunt enim quis.</p>
+                            </div>
+                            <div class="box-services">
+                                <h2>Organizing calendar</h2>
+                                <p>Elementum blandit erat odio quam pellentesque aliquam faucibus.</p>
+                            </div>
+                            <div class="box-services">
+                                <h2>Booking <br>travels</h2>
+                                <p>Est dignissim ipsum tellus, hendrerit ac aliquam eu vel blandit ac amet ut ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- sezione tre FIND ultimate VA  -->
+                <section class="find-va">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="img-find-va">
+                                <img src="img/info-5-2x-600x648.png" alt="">
+                            </div>
+
+                            <div class="title-dark">
+                                <img src="img/icon-1-2x-200x155.png" alt="icon">
+                                <h1> Find the ultimate virtual assistant for your business.</h1>
+                                <p> Donnec est tristique eu massa pellentesque non sit sit donec. Proin auctor est vehicula.</p>
+                                <div class="btn-orange">
+                                    <a href="#">What is a VA exactly?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             <!-- sezione skill -->
-            <section class="skill">
-                <img src="img/info-bg-3.svg" alt="">
-                <img id="dec-bg" src="img/info-bg-2.svg" alt="">
-                <div class="container">
-                    <div class="title-skill">
-                        <p> Donec est tristique eu massa pellentesque</p>
-                        <h1> Highly-skilled, independent <br> professional freelancer</h1>
-                        <div class="btn-orange">
-                            <a href="#">What is a VA exactly?</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card">
-                            <span>1.</span>
-                            <div class="card-text">
-                                <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                <a href="#">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <span>2.</span>
-                            <div class="card-text">
-                                <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                <a href="#">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <span>3.</span>
-                            <div class="card-text">
-                                <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                <a href="#">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="brand">
-                <div class="container">
-                    <h3>Trusted by these amazing brands</h3>
-                    <div id="img-brand" class="row">
-                        <img src="img/brand-1.jpg" alt="">
-                        <img src="img/brand-7.jpg" alt="">
-                        <img src="img/brand-3.jpg" alt="">
-                        <img src="img/brand-4.jpg" alt="">
-                        <img src="img/brand-5.jpg" alt="">
-                    </div>
-
-                    <div class="row">
-                        <div class="title-dark">
-                            <img src="img/icon-2-2x-200x127.png" alt="icon">
-                            <h1> Professional who works to help whit your business.</h1>
-                            <p> Donnec est tristique eu massa pellentesque non sit sit donec. Proin auctor est vehicula.</p>
+                <section class="skill">
+                    <img src="img/info-bg-3.svg" alt="">
+                    <img id="dec-bg" src="img/info-bg-2.svg" alt="">
+                    <div class="container">
+                        <div class="title-skill">
+                            <p> Donec est tristique eu massa pellentesque</p>
+                            <h1> Highly-skilled, independent <br> professional freelancer</h1>
                             <div class="btn-orange">
                                 <a href="#">What is a VA exactly?</a>
                             </div>
                         </div>
-                        <div class="img-find-va">
-                            <img src="img/info-8-2x-600x610.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="bg-first" class="card card-bg">
-                            <span>1.</span>
-                            <div class="card-text">
-                                <p>Learn to delegate</p>
-                                <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet.</p>
-                                <a href="#">Learn more</a>
+                        <div class="row">
+                            <div class="card">
+                                <span>1.</span>
+                                <div class="card-text">
+                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
+                                    <a href="#">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span>2.</span>
+                                <div class="card-text">
+                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
+                                    <a href="#">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span>3.</span>
+                                <div class="card-text">
+                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
+                                    <a href="#">Learn more</a>
+                                </div>
                             </div>
                         </div>
-                        <div id="bg-second" class="card card-bg">
-                            <span>2.</span>
-                            <div class="card-text ">
-                                <p>Reduce labor costs</p>
-                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper.</p>
-                                <a href="#">Learn more</a>
+                    </div>
+                </section>
+
+                <section class="brand">
+                    <div class="container">
+                        <h3>Trusted by these amazing brands</h3>
+                        <div id="img-brand" class="row">
+                            <img src="img/brand-1.jpg" alt="">
+                            <img src="img/brand-7.jpg" alt="">
+                            <img src="img/brand-3.jpg" alt="">
+                            <img src="img/brand-4.jpg" alt="">
+                            <img src="img/brand-5.jpg" alt="">
+                        </div>
+
+                        <div class="row">
+                            <div class="title-dark">
+                                <img src="img/icon-2-2x-200x127.png" alt="icon">
+                                <h1> Professional who works to help whit your business.</h1>
+                                <p> Donnec est tristique eu massa pellentesque non sit sit donec. Proin auctor est vehicula.</p>
+                                <div class="btn-orange">
+                                    <a href="#">What is a VA exactly?</a>
+                                </div>
+                            </div>
+                            <div class="img-find-va">
+                                <img src="img/info-8-2x-600x610.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="bg-first" class="card card-bg">
+                                <span>1.</span>
+                                <div class="card-text">
+                                    <p>Learn to delegate</p>
+                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#">Learn more</a>
+                                </div>
+                            </div>
+                            <div id="bg-second" class="card card-bg">
+                                <span>2.</span>
+                                <div class="card-text ">
+                                    <p>Reduce labor costs</p>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper.</p>
+                                    <a href="#">Learn more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </main>
 
-        <!-- FOOTER -->
-
-        <footer class="footer-bg">
-
-            <div class="container">
-                <div class="footer-top">
-                    <!-- header di sinistra -->
-                    <div class="footer-left">
-                        <div class="logo-header">
-                            <img src="img/logo.png" alt="logoVA">
+            <!-- FOOTER -->
+            <footer class="footer-bg">
+                <div class="container">
+                    <div class="footer-top">
+                        <!-- footer di sinistra -->
+                        <div class="footer-left">
+                            <div class="logo-header">
+                                <img src="img/logo.png" alt="logoVA">
+                            </div>
+                            <div class="menu-footer">
+                                <ul class="list-menu">
+                                    <li v-for="item in items">
+                                        <a href="#">{{item}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="menu-footer">
-                            <ul class="list-menu">
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                    <span><i class="fas fa-angle-down"></i></span>
-                                </li>
-                                <li>
-                                    <a href="#">Journal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
+
+                        <!-- footer di destra -->
+                        <div class="footer-right">
+                            <div class="info-number">
+                                <i class="fas fa-headphones-alt"></i>
+                                <span>1.800.123.4567</span>
+                            </div>
+                            <!-- bottone dark da riutilizzare ove occorre -->
+                            <div class="btn-dark ">
+                                <a href="#"> Get a free consultation </a>
+                            </div>
                         </div>
                     </div>
+                    <!-- end footer top -->
 
-                    <!-- header di destra -->
-                    <div class="footer-right">
-                        <div class="info-number">
-                            <i class="fas fa-headphones-alt"></i>
-                            <span>1.800.123.4567</span>
+                    <div class="footer-bottom">
+                        <h2>
+                            Independent professional who works remotely to help ith your business.
+                        </h2>
+                        <div class="btn-white">
+                            <a href="#">What is a VA exactly?</a>
                         </div>
-                        <!-- bottone dark da riutilizzare ove occorre -->
-                        <div class="btn-dark ">
-                            <a href="#"> Get a free consultation </a>
+                        <p>&copy; Copyright 2012-2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span> </p>
+                    </div>
+                </div>
+                <!-- widget per l'icona della chat -->
+                <div class="chat">
+                    <div class="icon-chat">
+                        <i class="fas fa-comment-alt"></i>
+                        <div class="mex-chat">
+                            <p>
+                                This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!
+                            </p>
+                            <img src="img/logo.png" alt="">
                         </div>
                     </div>
                 </div>
-                <!-- end footer top -->
+            </footer>
+        <!--end root  -->
+        </div>
 
-                <div class="footer-bottom">
-                    <h2>
-                        Independent professional who works remotely to help ith your business.
-                    </h2>
-                    <div class="btn-white">
-                        <a href="#">What is a VA exactly?</a>
-                    </div>
-                    <p>&copy; Copyright 2012-2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span> </p>
-                </div>
-            </div>
-
-            <div class="chat">
-                <div class="icon-chat">
-                    <i class="fas fa-comment-alt"></i>
-                    <div class="mex-chat">
-                        <p>
-                            This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!
-                        </p>
-                        <img src="img/logo.png" alt="">
-
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </footer>
 
 
         <!-- JAVASCRIPT -->

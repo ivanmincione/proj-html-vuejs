@@ -5,9 +5,10 @@
 }
 
 body{
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* general style */
 ul{
     list-style-type: none;
 }
@@ -21,29 +22,97 @@ h3{
     color: #f36137;
 }
 
-/* #orange-ball{
-    width: 200px;
-    height: 200px;
-    background-color: #f36137;
-    border-radius: 50%;
-    position: absolute;
-    top: -100px;
-    right: -120px;
-} */
+.container{
+    max-width: 1500px;
+    margin:0 auto;
+    position: relative;
+}
 
-/* .btn{
-    padding: 20px;
-    border-radius: 10px;
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section{
+    position: relative;
+}
+
+/* general style for button WHITE-ORANGE-DARK  */
+/* white button */
+.btn-white {
+    width: 300px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
     text-align: center;
-} */
+    cursor: pointer;
+}
+
+.btn-white a {
+    color: #0b0e10;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-white:hover{
+    background-color: #040543;
+}
+
+.btn-white:hover a{
+    color: white;
+
+}
+
+/* orange button */
+.btn-orange{
+    width: 300px;
+    background-color: #f36137;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-orange a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-orange:hover {
+    background-color: rgb(255, 153, 85);
+}
+
+/* dark button */
+.btn-dark{
+    width: 250px;
+    background-color: #040543;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-dark a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-dark:hover{
+    background-color: white;
+}
+
+.btn-dark:hover a{
+    color: #040543;
+}
 
 
-
+/* start style header (similar to Footer-top) */
 header, .footer-top{
     width: 100%;
     height: 200px;
-    /* background-color: #0f1164;
-    background-image: url("img/header-bg.svg"); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,14 +123,7 @@ header, .footer-top{
     background-color: #0f1164;
     background-image: url("img/header-bg.svg");
     background-repeat: no-repeat;
-
 }
-
-/* #img-bg-header{
-    position: absolute;
-    top: -40px;
-    z-index: 10;
-} */
 
 .header-left, .header-right, .footer-left, .footer-right {
     display: flex;
@@ -79,7 +141,13 @@ header, .footer-top{
 
 .list-menu{
     display: flex;
+}
 
+.list-menu li:nth-child(3) a:after{
+    content: "∇";
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .list-menu li{
@@ -111,39 +179,7 @@ header, .footer-top{
     margin-right: 10px;
 }
 
-.btn-white {
-    width: 300px;
-    background-color: white;
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-white a {
-    color: #0b0e10;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-/* prima sezione */
-.container{
-    max-width: 1500px;
-    margin:0 auto;
-    position: relative;
-}
-
-.row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-section{
-    position: relative;
-    padding-top: 40px;
-}
-
+/* first section*/
 main .top-page{
     background-color: #0f1164;
     background-image: url("img/home-bg-3.svg");
@@ -163,7 +199,6 @@ main .top-page{
     font-weight: bold;
     color: white;
     letter-spacing: 1px;
-    padding-top: 100px;
 }
 
 .title p{
@@ -223,19 +258,19 @@ main .top-page{
 }
 
 
-/* sezione Available service */
-
+/* second section - Available service */
 .available-services h3{
-    padding-top: 60px;
+    padding-top: 100px;
     margin-bottom: 30px;
     font-size: 22px;
 }
 
 .box-services{
     padding: 50px;
-    border-top: 3px solid lightgray;
-    border-right: 3px solid lightgray;
+    border-top: 3px solid rgb(235, 235, 235);
+    border-right: 3px solid rgb(235, 235, 235);
 }
+
 .box-services:last-child{
     border-right: none;
 }
@@ -252,8 +287,7 @@ main .top-page{
 }
 
 
-/* sezione find-va */
-
+/* third section - find-va */
 .find-va{
     margin-top: 100px;
     position: relative;
@@ -264,12 +298,12 @@ main .top-page{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 100px; */
-    /* margin-top: 100px; */
+    padding: 100px;
+    margin-bottom: 50px;
 }
 
 .title-dark h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     color: #040543;
     letter-spacing: 1px;
@@ -282,22 +316,7 @@ main .top-page{
     padding: 50px 50px;
 }
 
-.btn-orange{
-    width: 300px;
-    background-color: #f36137;
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-orange a{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* sezione SKILL  */
-
+/* fourth section - SKILL  */
 .skill{
     background-color: #0f1164;
     padding-top: 150px;
@@ -341,7 +360,7 @@ main .top-page{
     background-color: #040543;
     border-radius: 5px;
     padding: 60px;
-    margin: 80px 40px;
+    margin: 100px 40px;
     display: flex;
 }
 
@@ -367,11 +386,10 @@ main .top-page{
 
 }
 
-/* sezione brand */
-
+/* fifth section - brand */
 .brand h3{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
     margin-bottom: 30px;
     font-size: 20px;
 }
@@ -403,7 +421,6 @@ main .top-page{
     font-weight: bold;
 }
 
-
 /* FOOTER */
 .footer-bg{
     background-color: #0f1164;
@@ -414,21 +431,6 @@ main .top-page{
     padding-top: 50px;
     padding-bottom: 100px;
     position: relative;
-
-}
-
-.btn-dark{
-    width: 250px;
-    background-color: #040543;
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-dark a{
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .footer-bottom{
@@ -442,7 +444,6 @@ main .top-page{
     margin-bottom: 40px;
 }
 
-
 .footer-bottom p{
     color: white;
     font-size: 12px;
@@ -452,7 +453,6 @@ main .top-page{
 .footer-bottom p span{
     color: #f36137;
 }
-
 
 .chat{
     width: 80px;
@@ -465,6 +465,7 @@ main .top-page{
     align-items: center;
 }
 
+/* widget chat */
 .icon-chat{
     background-color: #f36137;
     border-radius: 50%;
