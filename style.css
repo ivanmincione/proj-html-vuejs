@@ -39,15 +39,21 @@ h3{
 
 
 
-header{
+header, .footer-top{
     width: 100%;
     height: 200px;
-    background-color: #0f1164;
-    background-image: url("img/header-bg.svg");
+    /* background-color: #0f1164;
+    background-image: url("img/header-bg.svg"); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.header-bg, .footer-bg{
+    background-color: #0f1164;
+    background-image: url("img/header-bg.svg");
+
 }
 
 /* #img-bg-header{
@@ -128,7 +134,8 @@ header{
 
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 section{
@@ -337,13 +344,9 @@ main .top-page{
     display: flex;
 }
 
-/* .row-bg{
-    background-color: #0f1164;
-    background-image: url("img/info-bg-3.svg");
-} */
-
 .card span{
     font-size: 40px;
+    font-weight: bold;
 }
 
 .card-text{
@@ -356,6 +359,8 @@ main .top-page{
 }
 
 .card-text a{
+    font-size: 20px;
+    font-weight: bold;
     color: #f36137;
     text-decoration: underline;
 
@@ -372,4 +377,45 @@ main .top-page{
 
 #img-brand{
     margin-bottom: 80px;
+}
+
+.card-bg {
+    background-color: #0f1164;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+#bg-first{
+    background-image: url("img/box-bg-1.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+#bg-second{
+    background-image: url("img/box-bg-2.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.card-bg p:first-child{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+
+.btn-dark{
+    width: 250px;
+    background-color: #040543;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-dark a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
