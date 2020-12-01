@@ -491,8 +491,8 @@ main .top-page{
     padding: 20px;
     display: none;
 }
-
-.chat:hover .mex-chat{
+/* add whit Vuejs */
+.active{
     display: block;
 }
 

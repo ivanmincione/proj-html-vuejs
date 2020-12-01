@@ -250,9 +250,9 @@
                 </div>
                 <!-- widget per l'icona della chat -->
                 <div class="chat">
-                    <div class="icon-chat">
+                    <div class="icon-chat" @click="show = true" >
                         <i class="fas fa-comment-alt"></i>
-                        <div class="mex-chat">
+                        <div class="mex-chat" :class="{ active: show }" v-if="show" @mouseleave="autoClose" >
                             <p>
                                 This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!
                             </p>
