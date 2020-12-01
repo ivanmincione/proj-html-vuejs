@@ -50,9 +50,10 @@ header, .footer-top{
     position: relative;
 }
 
-.header-bg, .footer-bg{
+.header-bg{
     background-color: #0f1164;
     background-image: url("img/header-bg.svg");
+    background-repeat: no-repeat;
 
 }
 
@@ -62,7 +63,7 @@ header, .footer-top{
     z-index: 10;
 } */
 
-.header-left, .header-right {
+.header-left, .header-right, .footer-left, .footer-right {
     display: flex;
     align-items: center;
     margin-right: 100px;
@@ -72,7 +73,7 @@ header, .footer-top{
     margin-left: 60px;
 }
 
-.menu-header{
+.menu-header, .menu-footer{
     margin-left: 80px;
 }
 
@@ -404,7 +405,17 @@ main .top-page{
 
 
 /* FOOTER */
+.footer-bg{
+    background-color: #0f1164;
+    background-image: url("img/footer-bg-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
 
+}
 
 .btn-dark{
     width: 250px;
@@ -418,4 +429,79 @@ main .top-page{
     color: white;
     font-size: 16px;
     font-weight: bold;
+}
+
+.footer-bottom{
+    max-width: 50%;
+    padding-left: 60px;
+}
+
+.footer-bottom h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.footer-bottom p{
+    color: white;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.footer-bottom p span{
+    color: #f36137;
+}
+
+
+.chat{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-chat{
+    background-color: #f36137;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-chat i{
+    color: white;
+    font-size: 30px;
+}
+
+.mex-chat{
+    width: 200px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: -180px;
+    left: -150px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    display: none;
+}
+
+.chat:hover .mex-chat{
+    display: block;
+}
+
+.mex-chat p{
+    color: #0b0e10;
+}
+
+.mex-chat img{
+    width: 50px;
+    position: absolute;
+    top: -40px;
+    left: calc( 50% - 25px );
 }
