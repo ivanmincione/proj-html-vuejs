@@ -26,7 +26,7 @@
                     <div class="menu-header">
                         <ul class="list-menu">
                             <li v-for="item in items">
-                                <a href="#">{{ item }}</a>
+                                <a href="#">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -218,7 +218,7 @@
                             <div class="menu-footer">
                                 <ul class="list-menu">
                                     <li v-for="item in items">
-                                        <a href="#">{{item}}</a>
+                                        <a href="#">{{item.name}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -252,11 +252,12 @@
                 <div class="chat">
                     <div class="icon-chat" @click="show = true" >
                         <i class="fas fa-comment-alt"></i>
-                        <div class="mex-chat" :class="{ active: show }" v-if="show" @mouseleave="autoClose" >
-                            <p>
-                                This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!
+                        <div class="mex-chat" v-if="show" :class="{ active : show }"  @mouseleave="autoClose">
+                            <p v-for="message in chat">
+                                {{ chat.mex }}
                             </p>
                             <img src="img/logo.png" alt="">
+                            <i class="fas fa-times" ></i>
                         </div>
                     </div>
                 </div>

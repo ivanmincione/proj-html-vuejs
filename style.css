@@ -488,12 +488,16 @@ main .top-page{
     top: -180px;
     left: -150px;
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px;
+    padding: 25px;
     display: none;
 }
 /* add whit Vuejs */
 .active{
     display: block;
+}
+
+.hidden{
+    display: none;
 }
 
 .mex-chat p{
@@ -505,4 +509,13 @@ main .top-page{
     position: absolute;
     top: -40px;
     left: calc( 50% - 25px );
+}
+
+.mex-chat i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+    padding: 10px;
+    font-size: 14px;
 }
