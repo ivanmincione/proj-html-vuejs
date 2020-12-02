@@ -24,7 +24,27 @@ var app = new Vue ({
         chat:{
             mex:"This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!",
         },
+
+        menuHamb: [
+            {
+                name: "Home",
+            },
+            {
+                name: "About",
+            },
+            {
+                name: "Services",
+            },
+            {
+                name: "Contact",
+            },
+            {
+                name: "Journal",
+            },
+        ],
+
         show: false,
+        showListHamb:false,
     } ,
 
     methods: {
@@ -33,6 +53,12 @@ var app = new Vue ({
             setTimeout(() => {
                 this.show = false;
             }, 3000);
+        },
+
+        hambClose() {
+            setTimeout(() => {
+                this.showListHamb = false;
+            }, 1000);
         },
 
 

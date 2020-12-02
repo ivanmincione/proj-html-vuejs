@@ -30,6 +30,18 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="hamb-menu-header">
+                        <i class="fas fa-bars" @click="showListHamb = true"></i>
+                        <div class="hamb-list" v-if="showListHamb" :class="{ active : showListHamb }"  @mouseleave="hambClose">
+                            <ul>
+                                <li v-for="element in menuHamb">
+                                    <a href="#" >
+                                        {{ element.name }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- header di destra -->
@@ -123,7 +135,6 @@
 
             <!-- sezione skill -->
                 <section class="skill">
-                    <img src="img/info-bg-3.svg" alt="">
                     <img id="dec-bg" src="img/info-bg-2.svg" alt="">
                     <div class="container">
                         <div class="title-skill">
@@ -162,12 +173,14 @@
                 <section class="brand">
                     <div class="container">
                         <h3>Trusted by these amazing brands</h3>
-                        <div id="img-brand" class="row">
-                            <img src="img/brand-1.jpg" alt="">
-                            <img src="img/brand-7.jpg" alt="">
-                            <img src="img/brand-3.jpg" alt="">
-                            <img src="img/brand-4.jpg" alt="">
-                            <img src="img/brand-5.jpg" alt="">
+                        <div class="row">
+                            <div id="img-brand" class="row">
+                                <img src="img/brand-1.jpg" alt="">
+                                <img src="img/brand-7.jpg" alt="">
+                                <img src="img/brand-3.jpg" alt="">
+                                <img src="img/brand-4.jpg" alt="">
+                                <img src="img/brand-5.jpg" alt="">
+                            </div>
                         </div>
 
                         <div class="row">

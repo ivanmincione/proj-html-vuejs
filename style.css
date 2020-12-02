@@ -5,6 +5,8 @@
 }
 
 body{
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,16 +27,18 @@ h3{
 .container{
     max-width: 1500px;
     margin:0 auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .row{
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 section{
+    max-width: 100%;
     position: relative;
 }
 
@@ -139,6 +143,10 @@ header, .footer-top{
     margin-left: 80px;
 }
 
+.hamb-menu-header{
+    display: none;
+}
+
 .list-menu{
     display: flex;
 }
@@ -170,7 +178,7 @@ header, .footer-top{
 
 .info-number{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 60px;
 }
@@ -319,6 +327,10 @@ main .top-page{
 /* fourth section - SKILL  */
 .skill{
     background-color: #0f1164;
+    background-image: url("img/info-bg-3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 150px;
     position: relative;
 }
@@ -518,4 +530,116 @@ main .top-page{
     color: gray;
     padding: 10px;
     font-size: 14px;
+}
+
+
+/*  add media query for responsive page */
+
+/* media 1450px  */
+@media screen and (max-width: 1450px){
+
+    .info-number{
+        display: none;
+    }
+
+    .widget-top, .widget-bottom{
+        display: none;
+    }
+
+}
+
+/* media 1270px */
+@media screen and (max-width: 1270px) {
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .menu-header{
+        display: none;
+    }
+
+    .menu-footer li{
+        padding: 10px 5px;
+    }
+
+    .menu-footer li a{
+        font-size: 16px;
+    }
+
+    .hamb-menu-header{
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-left: 50px;
+        position: relative;
+    }
+
+    .hamb-list{
+        width: 200px;
+        height: 200px;
+        background-color: #040543;
+        position: absolute;
+        top: -50px;
+        left: 200;
+        border-radius: 10px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .hamb-list li{
+        text-align: center;
+    }
+
+    .hamb-list li a {
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .hamb-list li a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    .box-services{
+        border: none;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .available-services h3{
+        text-align: center;
+    }
+
+}
+
+/* media 992px */
+@media screen and (max-width: 992px){
+    .menu-footer{
+        display: none;
+    }
+}
+
+/* media 748px */
+@media screen and (max-width: 748px) {
+
+    .btn-white, .btn-orange, .btn-dark {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .btn-white a, .btn-orange a, .btn-dark a {
+        font-size: 14px;
+
+    }
+
+    img{
+        max-width: 100%;
+    }
+
 }
