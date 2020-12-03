@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <!-- VUE.JS -->
 	    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <!-- library for Fade effect unpkg.com -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- STYLE -->
         <link rel="stylesheet" href="style.css">
         <!-- logo on bar title -->
@@ -65,20 +67,20 @@
                 <section class="top-page">
                     <div class="container">
                         <div class="row">
-                            <div class="title">
+                            <div class="title" data-aos="fade-right" data-aos-delay="100">
                                 <h1> Independent professional who works remotely to help whit your business.</h1>
                                 <p> Mauris aliquam libero, fermentum quis eros, massa sagittis. Lectus mattis elit purus venenatis.</p>
                                 <div class="btn-white">
                                     <a href="#">What is a VA exactly?</a>
                                 </div>
                             </div>
-                            <div class="img-top-page">
+                            <div class="img-top-page" data-aos="fade-up" data-aos-delay="200" >
                                 <img src="img/info-5-600x666.jpg" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="widget">
+                    <div class="widget" data-aos="fade-up" data-aos-delay="300">
                         <div class="widget-top">
                             <i class="fas fa-folder-minus"></i>
                             <p>Demos</p>
@@ -91,10 +93,10 @@
                 </section>
 
                 <!-- second section AVAILABLE SERVICES -->
-                <section class="available-services">
+                <section class="available-services" data-aos="fade-zoom-in" data-aos-delay="200">
                     <div class="container">
                         <h3>Available services</h3>
-                        <div class="row">
+                        <div class="row" data-aos="fade-zoom-in" data-aos-delay="300">
                             <div class="box-services">
                                 <h2>Answering phone calls</h2>
                                 <p>Elementum posuere mauris, ac ultricies eu orci massa at id tincidunt.</p>
@@ -116,7 +118,7 @@
                 </section>
 
                 <!-- sezione tre FIND ultimate VA  -->
-                <section class="find-va">
+                <section class="find-va" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" >
 
                     <div class="container">
                         <div class="row">
@@ -137,7 +139,7 @@
                 </section>
 
             <!-- sezione skill -->
-                <section class="skill">
+                <section class="skill" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="1000">
                     <img id="dec-bg" src="img/info-bg-2.svg" alt="">
                     <div class="container">
                         <div class="title-skill">
@@ -148,21 +150,21 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="card">
+                            <div class="card" data-aos="fade-right" data-aos-delay="100">
                                 <span>1.</span>
                                 <div class="card-text">
                                     <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
                                     <a href="#">Learn more</a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="fade-right" data-aos-delay="200">
                                 <span>2.</span>
                                 <div class="card-text">
                                     <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
                                     <a href="#">Learn more</a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="fade-right" data-aos-delay="300">
                                 <span>3.</span>
                                 <div class="card-text">
                                     <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
@@ -173,20 +175,20 @@
                     </div>
                 </section>
 
-                <section class="brand">
+                <section class="brand" data-aos="fade-zoom-in" data-aos-delay="200">
                     <div class="container">
                         <h3>Trusted by these amazing brands</h3>
                         <div class="row">
-                            <div id="img-brand" class="row">
-                                <img src="img/brand-1.jpg" alt="">
-                                <img src="img/brand-7.jpg" alt="">
-                                <img src="img/brand-3.jpg" alt="">
-                                <img src="img/brand-4.jpg" alt="">
-                                <img src="img/brand-5.jpg" alt="">
+                            <div id="img-brand" class="row" data-aos="fade-zoom-in" data-aos-delay="300">
+                                <img src="img/brand-1.jpg" alt="" data-aos="fade-zoom-in" data-aos-delay="400">
+                                <img src="img/brand-7.jpg" alt="" data-aos="fade-zoom-in" data-aos-delay="500">
+                                <img src="img/brand-3.jpg" alt="" data-aos="fade-zoom-in" data-aos-delay="600">
+                                <img src="img/brand-4.jpg" alt="" data-aos="fade-zoom-in" data-aos-delay="700">
+                                <img src="img/brand-5.jpg" alt="" data-aos="fade-zoom-in" data-aos-delay="800">
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row" data-aos="fade-zoom-in" data-aos-delay="400" >
                             <div class="title-dark">
                                 <img src="img/icon-2-2x-200x127.png" alt="icon">
                                 <h1> Professional who works to help whit your business.</h1>
@@ -201,7 +203,7 @@
                         </div>
 
                         <div class="row">
-                            <div id="bg-first" class="card card-bg">
+                            <div id="bg-first" class="card card-bg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                                 <span>1.</span>
                                 <div class="card-text">
                                     <p>Learn to delegate</p>
@@ -209,7 +211,7 @@
                                     <a href="#">Learn more</a>
                                 </div>
                             </div>
-                            <div id="bg-second" class="card card-bg">
+                            <div id="bg-second" class="card card-bg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                                 <span>2.</span>
                                 <div class="card-text ">
                                     <p>Reduce labor costs</p>
@@ -285,5 +287,10 @@
 
         <!-- JAVASCRIPT -->
         <script src="main.js" charset="utf-8"></script>
+        <!-- unpkg.com -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
