@@ -112,6 +112,16 @@ section{
     color: #040543;
 }
 
+/* scroll indicator dev in Js */
+#scrollIndicator{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: rgb(255, 153, 85);
+    box-shadow: 0 0 20px rgba(255, 153, 85, 0.5);
+    z-index: 10;
+}
 
 /* start style header (similar to Footer-top) */
 header, .footer-top{
@@ -195,11 +205,11 @@ main .top-page{
 }
 
 .title{
-    margin-right: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 100px;
 }
 
 .title h1{
@@ -581,8 +591,7 @@ main .top-page{
         height: 200px;
         background-color: #040543;
         position: absolute;
-        top: -50px;
-        left: 200;
+        top: -65px;
         border-radius: 10px;
         border: 1px solid white;
         display: flex;
@@ -604,6 +613,10 @@ main .top-page{
     .hamb-list li a:hover{
         text-decoration: underline;
         color: white;
+    }
+
+    .title{
+        padding: 0;
     }
 
     .box-services{

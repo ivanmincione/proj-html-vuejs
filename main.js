@@ -1,3 +1,17 @@
+// JAVASCRIPT for create a scroll bar indicator
+
+// When the user scrolls the page, execute function of scroll
+window.onscroll = function() {scrollBar()};
+
+function scrollBar() {
+  var winScroll = document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  // add into style of this element the width in %
+  document.getElementById("scrollIndicator").style.width = scrolled + "%";
+};
+
+// START VUE.js
 var app = new Vue ({
     el:'#root',
     data: {
@@ -60,7 +74,6 @@ var app = new Vue ({
                 this.showListHamb = false;
             }, 1000);
         },
-
 
     }
 //end Vue
