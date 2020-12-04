@@ -118,7 +118,7 @@
                 </section>
 
                 <!-- sezione tre FIND ultimate VA  -->
-                <section class="find-va" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500" >
+                <section class="find-va" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" >
 
                     <div class="container">
                         <div class="row">
@@ -150,25 +150,11 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="card" data-aos="fade-right" data-aos-delay="100">
-                                <span>1.</span>
+                            <div class="card" data-aos="fade-right" data-aos-delay="100" v-for="card in cards">
+                                <span>{{ card.title }}</span>
                                 <div class="card-text">
-                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                    <a href="#">Learn more</a>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="fade-right" data-aos-delay="200">
-                                <span>2.</span>
-                                <div class="card-text">
-                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                    <a href="#">Learn more</a>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="fade-right" data-aos-delay="300">
-                                <span>3.</span>
-                                <div class="card-text">
-                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.</p>
-                                    <a href="#">Learn more</a>
+                                    <p>{{ card.text }}</p>
+                                    <a href="#">{{ card.link }}</a>
                                 </div>
                             </div>
                         </div>
@@ -203,20 +189,12 @@
                         </div>
 
                         <div class="row">
-                            <div id="bg-first" class="card card-bg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                                <span>1.</span>
+                            <div id="bg-first" class="card card-bg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" v-for="box in boxBrand">
+                                <span>{{box.num}}</span>
                                 <div class="card-text">
-                                    <p>Learn to delegate</p>
-                                    <p>Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet.</p>
-                                    <a href="#">Learn more</a>
-                                </div>
-                            </div>
-                            <div id="bg-second" class="card card-bg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                                <span>2.</span>
-                                <div class="card-text ">
-                                    <p>Reduce labor costs</p>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper.</p>
-                                    <a href="#">Learn more</a>
+                                    <p>{{box.title}}</p>
+                                    <p>{{box.text}}</p>
+                                    <a href="#">{{box.link}}</a>
                                 </div>
                             </div>
                         </div>

@@ -384,6 +384,7 @@ main .top-page{
     padding: 60px;
     margin: 100px 40px;
     display: flex;
+    min-height: 300px;
 }
 
 .card span{

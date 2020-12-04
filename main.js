@@ -34,11 +34,53 @@ var app = new Vue ({
             },
 
         ],
+
+        // first block of card
+        cards: [
+            {
+                title: "1",
+                text: "Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.",
+                link: "Learn more",
+                href: "#",
+            },
+            {
+                title: "2",
+                text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                link: "Learn more",
+                href: "#",
+            },
+            {
+                title: "3",
+                text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                link: "Learn more",
+                href: "#",
+            },
+        ],
+
+        // second block of card
+        boxBrand:[
+            {
+                num: "1",
+                title: "Learn to delegate",
+                text: "Pellentesque pellentesque montes, pellentesque rutrum enim nisl purus posuere senectus.",
+                link: "Learn more",
+                href: "#",
+            },
+            {
+                num: "2",
+                title: "Reduce labor costs",
+                text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper.",
+                link: "Learn more",
+                href: "#",
+            }
+        ],
+
         //oggetto per i mex della chat
         chat:{
             mex:"This is a free Hubspot live chat. You can create your own chat flows and engage your customers with Avada& Hubspot!",
         },
 
+        // hamburger menu
         menuHamb: [
             {
                 name: "Home",
