@@ -97,21 +97,9 @@
                     <div class="container">
                         <h3>Available services</h3>
                         <div class="row" data-aos="fade-zoom-in" data-aos-delay="300">
-                            <div class="box-services">
-                                <h2>Answering phone calls</h2>
-                                <p>Elementum posuere mauris, ac ultricies eu orci massa at id tincidunt.</p>
-                            </div>
-                            <div class="box-services">
-                                <h2>Basic data entry</h2>
-                                <p>Accumsan odio id nec mauris, eu, tortor at. Vitae tincidunt enim quis.</p>
-                            </div>
-                            <div class="box-services">
-                                <h2>Organizing calendar</h2>
-                                <p>Elementum blandit erat odio quam pellentesque aliquam faucibus.</p>
-                            </div>
-                            <div class="box-services">
-                                <h2>Booking <br>travels</h2>
-                                <p>Est dignissim ipsum tellus, hendrerit ac aliquam eu vel blandit ac amet ut ut.</p>
+                            <div class="box-services" v-for=" service in services">
+                                <h2>{{ service.titleService }}</h2>
+                                <p>{{ service.textService }}</p>
                             </div>
                         </div>
                     </div>
@@ -241,7 +229,7 @@
                         <div class="btn-white">
                             <a href="#">What is a VA exactly?</a>
                         </div>
-                        <p>&copy; Copyright 2012-2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span> </p>
+                        <p id="text-copyright">&copy; Copyright 2012-2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span> </p>
                     </div>
                 </div>
                 <!-- widget per l'icona della chat -->

@@ -35,6 +35,26 @@ var app = new Vue ({
 
         ],
 
+        // block of services available
+        services: [
+            {
+                titleService: "Answering phone calls",
+                textService: "Elementum posuere mauris, ac ultricies eu orci massa at id tincidunt.",
+            },
+            {
+                titleService: "Basic data entry",
+                textService: "Accumsan odio id nec mauris, eu, tortor at. Vitae tincidunt enim quis.",
+            },
+            {
+                titleService: "Organizing calendar",
+                textService: "Elementum blandit erat odio quam pellentesque aliquam faucibus.",
+            },
+            {
+                titleService: "Travel search and booking",
+                textService: "Est dignissim ipsum tellus, hendrerit ac aliquam eu vel blandit ac amet ut ut.",
+            },
+        ],
+
         // first block of card
         cards: [
             {
